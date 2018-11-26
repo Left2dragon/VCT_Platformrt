@@ -8,7 +8,7 @@ public class HurtObject : MonoBehaviour
     //Function that triggers if the player is touching the sprite
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Restarts the level
+        //Restarts/Loads the level to its current scene
         if(collision.gameObject.tag == "Player")
         {
             Scene active = SceneManager.GetActiveScene();

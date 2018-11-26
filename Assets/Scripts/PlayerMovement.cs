@@ -5,15 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    //Sets a scroll on a variable
+    //Sets a scroll on a variable between value 0 and 20
     [Range(0,20f)]
     //Variable for how fast the player can move
     public float moveSpeed;
     //Variable for how high the player can jump
     public float jumpHeight;
 
+    //
     public GroundCheck groundCheck;
 
+    //Refrencing the players Rigidbody2D making it able to move with this script
     private Rigidbody2D rbody;
 
     // Use this for initialization
@@ -30,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxisRaw("Horizontal") * moveSpeed, 
             rbody.velocity.y);
 
-        //Makes the player able to jump
+        //Makes the player able to jump when pressing down the spacebar
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Checks if the player is standing on the ground or not

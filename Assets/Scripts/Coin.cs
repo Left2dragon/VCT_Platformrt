@@ -6,11 +6,6 @@ public class Coin : MonoBehaviour
 {
     public int score = 1;
 
-    private void Update()
-    {
-
-    }
-
     //Function that triggers if the player is touching the sprite
     private void OnTriggerEnter2D(Collider2D collision)
     {
