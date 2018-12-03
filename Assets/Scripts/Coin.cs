@@ -33,7 +33,7 @@ public class Coin : MonoBehaviour
             {
                 Debug.LogError("GameController finns inte");
             }
-            //After touching the sprite the sprite will disappear
+            //Temporarely deletes the sprite
             Destroy(gameObject);
         }
     }

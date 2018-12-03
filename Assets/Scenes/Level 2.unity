@@ -520,6 +520,11 @@ Prefab:
       propertyPath: m_isRightToLeft
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 223897044654219606, guid: bdf8be306335a914ca75ede4257de755,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf8be306335a914ca75ede4257de755, type: 2}
   m_IsPrefabAsset: 0
@@ -1090,7 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ab97ccd69831e4489b49e9a2c916a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: SampleScene
+  levelToLoad: Level 3
 --- !u!212 &1245668647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1177,7 +1182,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4939,11 +4944,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4259304149488274, guid: 006797244839c694aa94a17418a69f37, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.88
+      value: -14.68
       objectReference: {fileID: 0}
     - target: {fileID: 4259304149488274, guid: 006797244839c694aa94a17418a69f37, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.82
+      value: -6.84
       objectReference: {fileID: 0}
     - target: {fileID: 4259304149488274, guid: 006797244839c694aa94a17418a69f37, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4968,31 +4973,6 @@ Prefab:
     - target: {fileID: 4259304149488274, guid: 006797244839c694aa94a17418a69f37, type: 2}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 61271347234788932, guid: 006797244839c694aa94a17418a69f37,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61271347234788932, guid: 006797244839c694aa94a17418a69f37,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -1.0118756
-      objectReference: {fileID: 0}
-    - target: {fileID: 61271347234788932, guid: 006797244839c694aa94a17418a69f37,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.044970036
-      objectReference: {fileID: 0}
-    - target: {fileID: 61271347234788932, guid: 006797244839c694aa94a17418a69f37,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.011452436
-      objectReference: {fileID: 0}
-    - target: {fileID: 61271347234788932, guid: 006797244839c694aa94a17418a69f37,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.7341161
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 006797244839c694aa94a17418a69f37, type: 2}

@@ -8,6 +8,7 @@ public class EnemyHorizontalMovement : MonoBehaviour
     public float moveSpeed = 2f;
     public bool isLeft = true;
 
+    //Refrencing the sprites rigidbody2D
     private Rigidbody2D rbody;
 
     // Use this for initialization
@@ -18,15 +19,6 @@ public class EnemyHorizontalMovement : MonoBehaviour
         Move(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Move(true);
-        }
-    }
-
     //A void with a bool variable which triggers when the sprite collides onto a specific kind of barrier
     void Move(bool flip)
     {
@@ -34,13 +26,13 @@ public class EnemyHorizontalMovement : MonoBehaviour
         {
             isLeft = !isLeft;
         }
-        //moves right if the value is true
+        //Triggers the codes below if the value is true
         if (isLeft == true)
         {
             rbody.velocity = new Vector2(-moveSpeed, rbody.velocity.y);
             transform.localScale = new Vector3(1, 1, 1);
         }
-        //moves left if the value is not true
+        //Triggers the codes below if the value is not true
         else
         {
             rbody.velocity = new Vector2(moveSpeed, rbody.velocity.y);

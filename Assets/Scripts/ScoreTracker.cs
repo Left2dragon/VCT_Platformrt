@@ -6,6 +6,7 @@ using TMPro; //<- "namespace"
 
 public class ScoreTracker : MonoBehaviour
 {
+    //Refrencing the 
     public TMPro.TextMeshProUGUI scoreText;
     public int totalScore;
 
