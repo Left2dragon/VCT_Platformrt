@@ -16,7 +16,7 @@ public class Victory : MonoBehaviour
         {
             //prints out a text in the console
             print("Complete");
-            //Loads a scene(can be used to change a scene)
+            //Loads a scene(can be used to change a scene when the game is on)
             SceneManager.LoadScene(levelToLoad);
         }
     }

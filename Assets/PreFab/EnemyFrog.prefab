@@ -20,13 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4642518240297732}
   - component: {fileID: 212275706849883608}
-  - component: {fileID: 61624972607719274}
   - component: {fileID: 50790754501509198}
   - component: {fileID: 114462883329498704}
   - component: {fileID: 114781357070426462}
-  - component: {fileID: 114666848299595558}
+  - component: {fileID: 60679469681098666}
   m_Layer: 0
-  m_Name: EnemyJump
+  m_Name: EnemyFrog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,12 +120,65 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!60 &60679469681098666
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310626553508780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1015625, y: -0.2421875}
+      - {x: 0.0546875, y: -0.203125}
+      - {x: 0.0625, y: -0.1953125}
+      - {x: 0.0703125, y: -0.2109375}
+      - {x: 0.109375, y: -0.2421875}
+      - {x: 0.1171875, y: -0.2421875}
+      - {x: 0.1328125, y: -0.265625}
+      - {x: 0.16275406, y: -0.26777935}
+      - {x: 0.2621622, y: -0.28078604}
+      - {x: 0.2916813, y: -0.4248743}
+      - {x: 0.32896996, y: -0.48175716}
+      - {x: 0.4266472, y: -0.42010212}
+      - {x: 0.3871212, y: -0.3077278}
+      - {x: 0.1757412, y: -0.07846546}
+      - {x: 0.1358118, y: 0.08336067}
+      - {x: 0.02166462, y: 0.14277935}
+      - {x: -0.084628105, y: 0.25215435}
+      - {x: -0.2578125, y: 0.2551942}
+      - {x: -0.34375, y: 0.21351385}
+      - {x: -0.43010998, y: 0.05857277}
+      - {x: -0.43619156, y: -0.21482325}
+      - {x: -0.2302351, y: -0.31980085}
+      - {x: -0.1798191, y: -0.23061419}
+      - {x: -0.10532379, y: -0.24294996}
+      - {x: 0.049915314, y: -0.30844927}
+      - {x: 0.10367489, y: -0.4969597}
+      - {x: 0.21655464, y: -0.4184122}
+      - {x: 0.15625, y: -0.28125}
+      - {x: 0.109375, y: -0.2421875}
 --- !u!61 &61100161940721534
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -139,7 +191,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.7517171}
+  m_Offset: {x: -0.28466654, y: 2.5257432}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -150,32 +202,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.503435}
-  m_EdgeRadius: 0
---- !u!61 &61624972607719274
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1310626553508780}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.014825463, y: -0.1161325}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.87151265, y: 0.767735}
+  m_Size: {x: 3.9852705, y: 2.9553828}
   m_EdgeRadius: 0
 --- !u!61 &61746796120690920
 BoxCollider2D:
@@ -240,19 +267,6 @@ MonoBehaviour:
   jumpHeight: 7
   JumpT: {fileID: 114138340146037908}
   ground: {fileID: 114405109410913028}
---- !u!114 &114666848299595558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1310626553508780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169bf9c225532bd48860c4be4d7f7d0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  isLeft: 1
 --- !u!114 &114781357070426462
 MonoBehaviour:
   m_ObjectHideFlags: 1

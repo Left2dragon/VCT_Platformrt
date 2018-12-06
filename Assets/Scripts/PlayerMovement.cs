@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    //Sets a scroll on a variable between value 0 and 20
+    //Sets a scroll on a variable between value 0 and 20. This code makes it easier to alter the players movement
     [Range(0, 20f)]
     //Variable for how fast the player can run
     public float moveSpeed;
@@ -44,5 +44,4 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
 }
