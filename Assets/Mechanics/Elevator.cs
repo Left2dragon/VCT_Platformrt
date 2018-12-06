@@ -22,6 +22,7 @@ public class Elevator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Only triggers if the player is standing ontop of the elevator
         //if the variable has a value greater than 0 the functions below triggers
         if (JumpT.Jump > 0)
         {
@@ -29,6 +30,7 @@ public class Elevator : MonoBehaviour
             rbody.velocity = new Vector2(rbody.velocity.x, moveSpeed);
         }
 
+        //Triggers if the player exits the elevator so it goes down avoiding the elevator doing a weird jump
         //If the variable has the value less than or equals 0 the function below triggers
         if (JumpT.Jump <= 0)
         {

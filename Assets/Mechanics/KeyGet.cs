@@ -21,3 +21,5 @@ public class KeyGet : MonoBehaviour
     }
 
 }
+//The OnCollisionEnter2D Can be used to other objects such as when entering a door you will switch scene and same when you reach your goal.
+//(collision.gameobject.tag == "tag") makes sure that the function above only triggers if a sprite with a specific tag enters it

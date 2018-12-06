@@ -21,3 +21,4 @@ public class Victory : MonoBehaviour
         }
     }
 }
+//Scenemanager.LoadScene can also be used to change scene when you enter a let's say a door which changes a scene of the inside of an house

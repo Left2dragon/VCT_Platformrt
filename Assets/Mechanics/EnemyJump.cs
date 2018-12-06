@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyVerticalMovement : MonoBehaviour
+public class EnemyJump : MonoBehaviour
 {
     //Variable for how high the enemy can jump
     public int jumpHeight = 8;

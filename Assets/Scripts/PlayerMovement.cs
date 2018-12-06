@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxisRaw("Horizontal") * moveSpeed,
             rbody.velocity.y);
 
+        //The player can only jump if it is standing on the ground
         //When Spacebar is pushed down the function below activates
         if (Input.GetKeyDown(KeyCode.Space))
         {
